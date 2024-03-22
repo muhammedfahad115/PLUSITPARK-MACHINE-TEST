@@ -18,7 +18,7 @@ function Header() {
                         pending: 'Deleting user...',
                         success: () => {
                             localStorage.removeItem('token');
-                            navigate('/login');
+                            navigate('/register');
                             return 'User deleted successfully!';
                         },
                         error: (error) => {
